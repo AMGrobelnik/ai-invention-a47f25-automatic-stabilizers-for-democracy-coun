@@ -1,0 +1,507 @@
+{
+  "metadata": {
+    "method_name": "AutoStabilizersForDemocracy",
+    "description": "Structural-cyclical wedge decomposition of redistribution + panel local projections (Jordà 2005) to test whether counter-cyclical redistribution buffers democratic backsliding",
+    "n_mi_draws": 20,
+    "outcome": "v2x_libdem",
+    "shock": "gdp_innovation",
+    "horizons": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "verdict": "PARTIAL"
+  },
+  "datasets": [
+    {
+      "dataset": "wedge_decomposition",
+      "examples": [
+        {
+          "input": "Country: ARG | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.580",
+          "output": "{\"structural_wedge\": 6.128127539978643, \"cyclical_resp\": -0.0033801487732564557, \"cyclical_resp_se\": 0.07177157659125334, \"net_gini_mean\": 42.77345869329816, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.0033801487732564557",
+          "predict_structural_wedge": "6.128127539978643",
+          "metadata_iso3c": "ARG",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: AUS | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.857",
+          "output": "{\"structural_wedge\": 12.114328108645434, \"cyclical_resp\": 0.05048361283081206, \"cyclical_resp_se\": 0.11495879590680985, \"net_gini_mean\": 33.930423366978644, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.05048361283081206",
+          "predict_structural_wedge": "12.114328108645434",
+          "metadata_iso3c": "AUS",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: AUT | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.831",
+          "output": "{\"structural_wedge\": 20.686223587256766, \"cyclical_resp\": -0.007656216184302034, \"cyclical_resp_se\": 0.08078055387102276, \"net_gini_mean\": 28.238039031546226, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.007656216184302034",
+          "predict_structural_wedge": "20.686223587256766",
+          "metadata_iso3c": "AUT",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: BEL | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.819",
+          "output": "{\"structural_wedge\": 21.79959930378951, \"cyclical_resp\": -0.05114171218186374, \"cyclical_resp_se\": 0.07448686673951153, \"net_gini_mean\": 28.20264798350726, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.05114171218186374",
+          "predict_structural_wedge": "21.79959930378951",
+          "metadata_iso3c": "BEL",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: BGD | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.398",
+          "output": "{\"structural_wedge\": 1.9838813663447286, \"cyclical_resp\": -0.008065841398247117, \"cyclical_resp_se\": 0.08863922236301999, \"net_gini_mean\": 31.10311349371651, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.008065841398247117",
+          "predict_structural_wedge": "1.9838813663447286",
+          "metadata_iso3c": "BGD",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: BGR | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.598",
+          "output": "{\"structural_wedge\": 7.974628350943294, \"cyclical_resp\": -0.00914058882106351, \"cyclical_resp_se\": 0.11399374157251621, \"net_gini_mean\": 29.98920684288118, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.00914058882106351",
+          "predict_structural_wedge": "7.974628350943294",
+          "metadata_iso3c": "BGR",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: BRA | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.521",
+          "output": "{\"structural_wedge\": 3.966850145937721, \"cyclical_resp\": -0.018316431163565426, \"cyclical_resp_se\": 0.10515042904946519, \"net_gini_mean\": 53.08511684546421, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.018316431163565426",
+          "predict_structural_wedge": "3.966850145937721",
+          "metadata_iso3c": "BRA",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: CAN | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.843",
+          "output": "{\"structural_wedge\": 11.922028579985371, \"cyclical_resp\": -0.028431822607887413, \"cyclical_resp_se\": 0.06148366061465511, \"net_gini_mean\": 33.05562560820827, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.028431822607887413",
+          "predict_structural_wedge": "11.922028579985371",
+          "metadata_iso3c": "CAN",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: CHE | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.860",
+          "output": "{\"structural_wedge\": 8.938066282909931, \"cyclical_resp\": 0.009764009203354018, \"cyclical_resp_se\": 0.09739155143835873, \"net_gini_mean\": 31.12273275572223, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.009764009203354018",
+          "predict_structural_wedge": "8.938066282909931",
+          "metadata_iso3c": "CHE",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: CHL | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.697",
+          "output": "{\"structural_wedge\": 7.083778642396614, \"cyclical_resp\": 0.01716886937895607, \"cyclical_resp_se\": 0.08657309407283005, \"net_gini_mean\": 45.98733647406246, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.01716886937895607",
+          "predict_structural_wedge": "7.083778642396614",
+          "metadata_iso3c": "CHL",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: CHN | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.201",
+          "output": "{\"structural_wedge\": 12.765387336697856, \"cyclical_resp\": -0.026207572698609054, \"cyclical_resp_se\": 0.10770460316879335, \"net_gini_mean\": 38.14731092039467, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.026207572698609054",
+          "predict_structural_wedge": "12.765387336697856",
+          "metadata_iso3c": "CHN",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: COL | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.551",
+          "output": "{\"structural_wedge\": 4.976449718411778, \"cyclical_resp\": -0.0017814819837541705, \"cyclical_resp_se\": 0.07670347935886815, \"net_gini_mean\": 49.95262380979749, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.0017814819837541705",
+          "predict_structural_wedge": "4.976449718411778",
+          "metadata_iso3c": "COL",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: CZE | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.757",
+          "output": "{\"structural_wedge\": 16.855337859079416, \"cyclical_resp\": 0.006633867139828928, \"cyclical_resp_se\": 0.06584228985452557, \"net_gini_mean\": 26.207307214254055, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.006633867139828928",
+          "predict_structural_wedge": "16.855337859079416",
+          "metadata_iso3c": "CZE",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: DEU | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.852",
+          "output": "{\"structural_wedge\": 17.906467293226353, \"cyclical_resp\": -0.059720603695069506, \"cyclical_resp_se\": 0.0675344916669604, \"net_gini_mean\": 32.09545909300334, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.059720603695069506",
+          "predict_structural_wedge": "17.906467293226353",
+          "metadata_iso3c": "DEU",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: DNK | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.890",
+          "output": "{\"structural_wedge\": 17.070747890272123, \"cyclical_resp\": -0.06687563759225128, \"cyclical_resp_se\": 0.09348276625758391, \"net_gini_mean\": 26.912995023600175, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.06687563759225128",
+          "predict_structural_wedge": "17.070747890272123",
+          "metadata_iso3c": "DNK",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: EGY | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.299",
+          "output": "{\"structural_wedge\": 3.021127745269809, \"cyclical_resp\": -0.04237818107499193, \"cyclical_resp_se\": 0.07274289221398401, \"net_gini_mean\": 27.898920671095507, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.04237818107499193",
+          "predict_structural_wedge": "3.021127745269809",
+          "metadata_iso3c": "EGY",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: ESP | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.752",
+          "output": "{\"structural_wedge\": 13.574784978102368, \"cyclical_resp\": 0.02793174305926559, \"cyclical_resp_se\": 0.06493928172641424, \"net_gini_mean\": 34.337010627636296, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.02793174305926559",
+          "predict_structural_wedge": "13.574784978102368",
+          "metadata_iso3c": "ESP",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: FIN | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.878",
+          "output": "{\"structural_wedge\": 18.01036323780488, \"cyclical_resp\": -0.06177035029380294, \"cyclical_resp_se\": 0.10178275240008904, \"net_gini_mean\": 28.04442589897541, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.06177035029380294",
+          "predict_structural_wedge": "18.01036323780488",
+          "metadata_iso3c": "FIN",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: FRA | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.800",
+          "output": "{\"structural_wedge\": 18.161075833096735, \"cyclical_resp\": -0.008493314936175628, \"cyclical_resp_se\": 0.08257099457893456, \"net_gini_mean\": 29.771747945774457, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.008493314936175628",
+          "predict_structural_wedge": "18.161075833096735",
+          "metadata_iso3c": "FRA",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: GBR | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.819",
+          "output": "{\"structural_wedge\": 14.884414423810995, \"cyclical_resp\": -0.056481248875263346, \"cyclical_resp_se\": 0.07619056903963954, \"net_gini_mean\": 36.111441817265685, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.056481248875263346",
+          "predict_structural_wedge": "14.884414423810995",
+          "metadata_iso3c": "GBR",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: GRC | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.680",
+          "output": "{\"structural_wedge\": 17.655679492699885, \"cyclical_resp\": 0.03789874549092488, \"cyclical_resp_se\": 0.11942898547208873, \"net_gini_mean\": 34.30617676280133, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.03789874549092488",
+          "predict_structural_wedge": "17.655679492699885",
+          "metadata_iso3c": "GRC",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: HUN | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.640",
+          "output": "{\"structural_wedge\": 18.00242833302049, \"cyclical_resp\": 0.06327362473071244, \"cyclical_resp_se\": 0.0649214919966229, \"net_gini_mean\": 29.0436670968649, \"secular_erosion\": true}",
+          "predict_cyclical_resp": "0.06327362473071244",
+          "predict_structural_wedge": "18.00242833302049",
+          "metadata_iso3c": "HUN",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: IDN | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.530",
+          "output": "{\"structural_wedge\": 3.0490639247524562, \"cyclical_resp\": -0.03970748482067142, \"cyclical_resp_se\": 0.06997428694093284, \"net_gini_mean\": 34.94639709148372, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.03970748482067142",
+          "predict_structural_wedge": "3.0490639247524562",
+          "metadata_iso3c": "IDN",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: IND | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.559",
+          "output": "{\"structural_wedge\": 2.0822176728364648, \"cyclical_resp\": 0.0434799528947641, \"cyclical_resp_se\": 0.08322600683188386, \"net_gini_mean\": 50.04006985574691, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.0434799528947641",
+          "predict_structural_wedge": "2.0822176728364648",
+          "metadata_iso3c": "IND",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: IRL | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.814",
+          "output": "{\"structural_wedge\": 20.08372477429079, \"cyclical_resp\": 0.056464924804974545, \"cyclical_resp_se\": 0.08600416736665394, \"net_gini_mean\": 30.962262188145235, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.056464924804974545",
+          "predict_structural_wedge": "20.08372477429079",
+          "metadata_iso3c": "IRL",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: ISR | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.682",
+          "output": "{\"structural_wedge\": 12.019529586770151, \"cyclical_resp\": 0.003795288545155094, \"cyclical_resp_se\": 0.09269655416760848, \"net_gini_mean\": 34.90185178413053, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.003795288545155094",
+          "predict_structural_wedge": "12.019529586770151",
+          "metadata_iso3c": "ISR",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: ITA | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.717",
+          "output": "{\"structural_wedge\": 14.242726792349274, \"cyclical_resp\": -0.0788587916892373, \"cyclical_resp_se\": 0.10878268004317228, \"net_gini_mean\": 35.75902038266788, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.0788587916892373",
+          "predict_structural_wedge": "14.242726792349274",
+          "metadata_iso3c": "ITA",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: JPN | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.729",
+          "output": "{\"structural_wedge\": 11.966998442281065, \"cyclical_resp\": -0.026521551211086687, \"cyclical_resp_se\": 0.07466570721656189, \"net_gini_mean\": 32.076952142904, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.026521551211086687",
+          "predict_structural_wedge": "11.966998442281065",
+          "metadata_iso3c": "JPN",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: KEN | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.449",
+          "output": "{\"structural_wedge\": 2.794737438918496, \"cyclical_resp\": -0.0062084594471381776, \"cyclical_resp_se\": 0.05480250702298201, \"net_gini_mean\": 40.213322362476454, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.0062084594471381776",
+          "predict_structural_wedge": "2.794737438918496",
+          "metadata_iso3c": "KEN",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: KOR | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.650",
+          "output": "{\"structural_wedge\": 10.15032982200219, \"cyclical_resp\": 0.024627350438188575, \"cyclical_resp_se\": 0.0784186278797548, \"net_gini_mean\": 30.872454741772447, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.024627350438188575",
+          "predict_structural_wedge": "10.15032982200219",
+          "metadata_iso3c": "KOR",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: MAR | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.379",
+          "output": "{\"structural_wedge\": 3.908960452462331, \"cyclical_resp\": -0.03743603954707293, \"cyclical_resp_se\": 0.07107930870500323, \"net_gini_mean\": 37.064164403275726, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.03743603954707293",
+          "predict_structural_wedge": "3.908960452462331",
+          "metadata_iso3c": "MAR",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: MEX | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.500",
+          "output": "{\"structural_wedge\": 3.985247093849556, \"cyclical_resp\": -0.012420065792828887, \"cyclical_resp_se\": 0.08793441391811423, \"net_gini_mean\": 45.96627027804225, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.012420065792828887",
+          "predict_structural_wedge": "3.985247093849556",
+          "metadata_iso3c": "MEX",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: MYS | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.419",
+          "output": "{\"structural_wedge\": 4.942834906229401, \"cyclical_resp\": 0.0031774908971329125, \"cyclical_resp_se\": 0.08035808252867391, \"net_gini_mean\": 41.04244814848944, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.0031774908971329125",
+          "predict_structural_wedge": "4.942834906229401",
+          "metadata_iso3c": "MYS",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: NGA | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.380",
+          "output": "{\"structural_wedge\": 3.0521886928448345, \"cyclical_resp\": 0.014786095613355388, \"cyclical_resp_se\": 0.0625342458166535, \"net_gini_mean\": 40.970176021368715, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.014786095613355388",
+          "predict_structural_wedge": "3.0521886928448345",
+          "metadata_iso3c": "NGA",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: NLD | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.868",
+          "output": "{\"structural_wedge\": 21.1080746737345, \"cyclical_resp\": -0.08037218334834893, \"cyclical_resp_se\": 0.07118254699499878, \"net_gini_mean\": 28.068470344194534, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.08037218334834893",
+          "predict_structural_wedge": "21.1080746737345",
+          "metadata_iso3c": "NLD",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: NOR | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.898",
+          "output": "{\"structural_wedge\": 17.03619059494372, \"cyclical_resp\": -0.013580881329242522, \"cyclical_resp_se\": 0.06927453305162772, \"net_gini_mean\": 26.058435785282008, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.013580881329242522",
+          "predict_structural_wedge": "17.03619059494372",
+          "metadata_iso3c": "NOR",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: NZL | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.870",
+          "output": "{\"structural_wedge\": 12.08969936369317, \"cyclical_resp\": -0.0027241344302225924, \"cyclical_resp_se\": 0.08712367951760168, \"net_gini_mean\": 33.86748550160843, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.0027241344302225924",
+          "predict_structural_wedge": "12.08969936369317",
+          "metadata_iso3c": "NZL",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: PAK | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.352",
+          "output": "{\"structural_wedge\": 2.0807280683688654, \"cyclical_resp\": -0.017015686881177616, \"cyclical_resp_se\": 0.08492357351737709, \"net_gini_mean\": 31.94789847301105, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.017015686881177616",
+          "predict_structural_wedge": "2.0807280683688654",
+          "metadata_iso3c": "PAK",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: PER | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.576",
+          "output": "{\"structural_wedge\": 5.913285315411721, \"cyclical_resp\": 0.05393377231751131, \"cyclical_resp_se\": 0.07597104263192064, \"net_gini_mean\": 45.15625660087599, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.05393377231751131",
+          "predict_structural_wedge": "5.913285315411721",
+          "metadata_iso3c": "PER",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: PHL | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.498",
+          "output": "{\"structural_wedge\": 4.981386477534722, \"cyclical_resp\": 0.004496759830951902, \"cyclical_resp_se\": 0.07400121998696682, \"net_gini_mean\": 39.96160791001616, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.004496759830951902",
+          "predict_structural_wedge": "4.981386477534722",
+          "metadata_iso3c": "PHL",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: POL | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.717",
+          "output": "{\"structural_wedge\": 12.08292637628699, \"cyclical_resp\": 0.08005807766518999, \"cyclical_resp_se\": 0.08327461439989767, \"net_gini_mean\": 33.85944624464143, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.08005807766518999",
+          "predict_structural_wedge": "12.08292637628699",
+          "metadata_iso3c": "POL",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: PRT | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.742",
+          "output": "{\"structural_wedge\": 14.436364126303513, \"cyclical_resp\": 0.08066389364885135, \"cyclical_resp_se\": 0.08252529265254568, \"net_gini_mean\": 37.59668811196884, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.08066389364885135",
+          "predict_structural_wedge": "14.436364126303513",
+          "metadata_iso3c": "PRT",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: ROU | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.622",
+          "output": "{\"structural_wedge\": 9.026299052653389, \"cyclical_resp\": 0.03072892787019965, \"cyclical_resp_se\": 0.07125301316153171, \"net_gini_mean\": 26.97865845166885, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.03072892787019965",
+          "predict_structural_wedge": "9.026299052653389",
+          "metadata_iso3c": "ROU",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: RUS | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.354",
+          "output": "{\"structural_wedge\": 8.71317151656079, \"cyclical_resp\": -0.027594784334190114, \"cyclical_resp_se\": 0.08277490297867768, \"net_gini_mean\": 37.25078815182614, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.027594784334190114",
+          "predict_structural_wedge": "8.71317151656079",
+          "metadata_iso3c": "RUS",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: SWE | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.878",
+          "output": "{\"structural_wedge\": 15.899020368514538, \"cyclical_resp\": -0.03501835446576679, \"cyclical_resp_se\": 0.08317277024082666, \"net_gini_mean\": 27.125958054214085, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.03501835446576679",
+          "predict_structural_wedge": "15.899020368514538",
+          "metadata_iso3c": "SWE",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: THA | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.399",
+          "output": "{\"structural_wedge\": 6.108225146977635, \"cyclical_resp\": 0.0061272727761416835, \"cyclical_resp_se\": 0.05745116869622766, \"net_gini_mean\": 37.98119499277069, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.0061272727761416835",
+          "predict_structural_wedge": "6.108225146977635",
+          "metadata_iso3c": "THA",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: TUR | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.502",
+          "output": "{\"structural_wedge\": 2.8563794496060995, \"cyclical_resp\": 0.02511973286702323, \"cyclical_resp_se\": 0.08111867308906709, \"net_gini_mean\": 40.041070153985565, \"secular_erosion\": true}",
+          "predict_cyclical_resp": "0.02511973286702323",
+          "predict_structural_wedge": "2.8563794496060995",
+          "metadata_iso3c": "TUR",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: UKR | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.553",
+          "output": "{\"structural_wedge\": 11.138535351610432, \"cyclical_resp\": 0.07258637069282392, \"cyclical_resp_se\": 0.05670229936984763, \"net_gini_mean\": 25.922869979305847, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.07258637069282392",
+          "predict_structural_wedge": "11.138535351610432",
+          "metadata_iso3c": "UKR",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: USA | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.780",
+          "output": "{\"structural_wedge\": 8.124785152896193, \"cyclical_resp\": -0.030144078130004803, \"cyclical_resp_se\": 0.06157317457492401, \"net_gini_mean\": 38.91346710699842, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.030144078130004803",
+          "predict_structural_wedge": "8.124785152896193",
+          "metadata_iso3c": "USA",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: VEN | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.367",
+          "output": "{\"structural_wedge\": 2.9772205808015153, \"cyclical_resp\": -0.020990259364380256, \"cyclical_resp_se\": 0.07924317303968623, \"net_gini_mean\": 40.973848675141944, \"secular_erosion\": true}",
+          "predict_cyclical_resp": "-0.020990259364380256",
+          "predict_structural_wedge": "2.9772205808015153",
+          "metadata_iso3c": "VEN",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: VNM | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.218",
+          "output": "{\"structural_wedge\": 3.011731123337763, \"cyclical_resp\": -0.008306396182600451, \"cyclical_resp_se\": 0.09571941122186743, \"net_gini_mean\": 35.13004038436611, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.008306396182600451",
+          "predict_structural_wedge": "3.011731123337763",
+          "metadata_iso3c": "VNM",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: ZAF | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.601",
+          "output": "{\"structural_wedge\": 3.147746399328486, \"cyclical_resp\": 0.022756394567728294, \"cyclical_resp_se\": 0.09936339762200633, \"net_gini_mean\": 62.83904309932746, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.022756394567728294",
+          "predict_structural_wedge": "3.147746399328486",
+          "metadata_iso3c": "ZAF",
+          "metadata_n_obs": 33
+        }
+      ]
+    },
+    {
+      "dataset": "local_projections",
+      "examples": [
+        {
+          "input": "Local Projection | horizon h=0 | outcome=v2x_libdem | shock=gdp_innovation",
+          "output": "{\"h\": 0, \"beta_h\": -0.0005381579271614503, \"delta_h\": 0.00016123409635247708, \"delta_h_ci95_lo\": -0.006815251769273354, \"delta_h_ci95_hi\": 0.007137719961978308, \"phi_h\": 2.6342683726437578e-05, \"theta_h\": 6.017571581821426e-06, \"dominance_wald_pvalue\": 0.96977081684969, \"n_obs\": 1612}",
+          "predict_delta_h": "0.00016123409635247708",
+          "predict_phi_h": "2.6342683726437578e-05",
+          "metadata_horizon": 0
+        },
+        {
+          "input": "Local Projection | horizon h=1 | outcome=v2x_libdem | shock=gdp_innovation",
+          "output": "{\"h\": 1, \"beta_h\": 0.00013919683558420422, \"delta_h\": 0.0003305478290954776, \"delta_h_ci95_lo\": -0.007358030196298334, \"delta_h_ci95_hi\": 0.008019125854489289, \"phi_h\": -2.6858395565515613e-06, \"theta_h\": 5.726745011968076e-06, \"dominance_wald_pvalue\": 0.9323037362130802, \"n_obs\": 1560}",
+          "predict_delta_h": "0.0003305478290954776",
+          "predict_phi_h": "-2.6858395565515613e-06",
+          "metadata_horizon": 1
+        },
+        {
+          "input": "Local Projection | horizon h=2 | outcome=v2x_libdem | shock=gdp_innovation",
+          "output": "{\"h\": 2, \"beta_h\": 7.579465325474599e-05, \"delta_h\": -0.0008366728692696807, \"delta_h_ci95_lo\": -0.009488899654520207, \"delta_h_ci95_hi\": 0.007815553915980846, \"phi_h\": 1.992879923420319e-05, \"theta_h\": -2.397248462827344e-06, \"dominance_wald_pvalue\": 0.8461440112391048, \"n_obs\": 1508}",
+          "predict_delta_h": "-0.0008366728692696807",
+          "predict_phi_h": "1.992879923420319e-05",
+          "metadata_horizon": 2
+        },
+        {
+          "input": "Local Projection | horizon h=3 | outcome=v2x_libdem | shock=gdp_innovation",
+          "output": "{\"h\": 3, \"beta_h\": 0.0011859010975067787, \"delta_h\": 0.0008915106086817491, \"delta_h_ci95_lo\": -0.008150343765798092, \"delta_h_ci95_hi\": 0.00993336498316159, \"phi_h\": -5.02653031121924e-05, \"theta_h\": -1.3811237123856382e-05, \"dominance_wald_pvalue\": 0.8382428370246295, \"n_obs\": 1456}",
+          "predict_delta_h": "0.0008915106086817491",
+          "predict_phi_h": "-5.02653031121924e-05",
+          "metadata_horizon": 3
+        },
+        {
+          "input": "Local Projection | horizon h=4 | outcome=v2x_libdem | shock=gdp_innovation",
+          "output": "{\"h\": 4, \"beta_h\": 9.791059479662286e-05, \"delta_h\": -0.0019983521404129097, \"delta_h_ci95_lo\": -0.01264221577286273, \"delta_h_ci95_hi\": 0.00864551149203691, \"phi_h\": -9.81475830259268e-06, \"theta_h\": 3.446350440879223e-06, \"dominance_wald_pvalue\": 0.7142415175913375, \"n_obs\": 1404}",
+          "predict_delta_h": "-0.0019983521404129097",
+          "predict_phi_h": "-9.81475830259268e-06",
+          "metadata_horizon": 4
+        },
+        {
+          "input": "Local Projection | horizon h=5 | outcome=v2x_libdem | shock=gdp_innovation",
+          "output": "{\"h\": 5, \"beta_h\": 0.0003458229070988347, \"delta_h\": -0.0002549337001384519, \"delta_h_ci95_lo\": -0.012659925809969426, \"delta_h_ci95_hi\": 0.012150058409692523, \"phi_h\": -1.118023721697078e-05, \"theta_h\": 1.0618839770693196e-07, \"dominance_wald_pvalue\": 0.9692792077795748, \"n_obs\": 1352}",
+          "predict_delta_h": "-0.0002549337001384519",
+          "predict_phi_h": "-1.118023721697078e-05",
+          "metadata_horizon": 5
+        },
+        {
+          "input": "Local Projection | horizon h=6 | outcome=v2x_libdem | shock=gdp_innovation",
+          "output": "{\"h\": 6, \"beta_h\": -0.0007642147488519502, \"delta_h\": -0.005513656427231083, \"delta_h_ci95_lo\": -0.01965525487049046, \"delta_h_ci95_hi\": 0.008627942016028296, \"phi_h\": 2.3242660804909068e-05, \"theta_h\": 2.776115687202985e-05, \"dominance_wald_pvalue\": 0.44285164258753684, \"n_obs\": 1300}",
+          "predict_delta_h": "-0.005513656427231083",
+          "predict_phi_h": "2.3242660804909068e-05",
+          "metadata_horizon": 6
+        }
+      ]
+    },
+    {
+      "dataset": "aggregate_summary",
+      "examples": [
+        {
+          "input": "Aggregate summary: stabilizer decomposition, LP, half-life, leading indicator",
+          "output": "{\"step0_diagnostics\": {\"n_countries\": 52, \"n_country_years\": 1716, \"within_sd_wedge_mean\": 0.5058203154576526, \"within_r2_wedge_gdp_mean\": 0.034073522567993994, \"pairwise_corr\": {\"netgini_structural\": -0.6069111519282693, \"structural_cyclical\": -0.12210377413987389, \"netgini_cyclical\": 0.1721998855148778}, \"vif_structural\": 1.5839329524919268, \"vif_cyclical\": 1.031079672969143, \"testability\": \"INSUFFICIENT_WITHIN_VARIATION\"}, \"step1_decomposition\": {\"cyclical_resp_stats\": {\"mean\": -0.0028996831921197517, \"sd\": 0.03921323186750099, \"p25\": -0.02780404390261444, \"p75\": 0.023224133535343364, \"pct_negative\": 0.5769230769230769}, \"structural_wedge_stats\": {\"mean\": 10.163309707458303, \"sd\": 6.072984705122905}}, \"step2_lp\": {\"horizons\": [0, 1, 2, 3, 4, 5, 6], \"delta_h\": [0.00016123409635247708, 0.0003305478290954776, -0.0008366728692696807, 0.0008915106086817491, -0.0019983521404129097, -0.0002549337001384519, -0.005513656427231083], \"delta_h_ci95_lo\": [-0.006815251769273354, -0.007358030196298334, -0.009488899654520207, -0.008150343765798092, -0.01264221577286273, -0.012659925809969426, -0.01965525487049046], \"delta_h_ci95_hi\": [0.007137719961978308, 0.008019125854489289, 0.007815553915980846, 0.00993336498316159, 0.00864551149203691, 0.012150058409692523, 0.008627942016028296], \"phi_h\": [2.6342683726437578e-05, -2.6858395565515613e-06, 1.992879923420319e-05, -5.02653031121924e-05, -9.81475830259268e-06, -1.118023721697078e-05, 2.3242660804909068e-05], \"theta_h\": [6.017571581821426e-06, 5.726745011968076e-06, -2.397248462827344e-06, -1.3811237123856382e-05, 3.446350440879223e-06, 1.0618839770693196e-07, 2.776115687202985e-05], \"dominance_wald_pvalue\": [0.96977081684969, 0.9323037362130802, 0.8461440112391048, 0.8382428370246295, 0.7142415175913375, 0.9692792077795748, 0.44285164258753684], \"n_obs\": 1612}, \"step3_halflife\": {\"cyclical_low\": 693.1471797814919, \"cyclical_median\": 693.1471782491859, \"cyclical_high\": 693.1470424588088, \"structural_low\": 693.1463409247439, \"structural_median\": 693.1471782491859, \"structural_high\": 693.147070701382, \"netgini_low\": 1.1503596188838194, \"netgini_median\": 0.7449998971498889, \"netgini_high\": 0.6215665704123661}, \"step4_triple_dissociation\": {\"polynomial_delta_h_significant\": null, \"cem_n_matched\": 1500, \"cem_delta_h_significant\": null}, \"step5_leading_indicator\": {\"baseline_auc\": 0.8941176470588236, \"augmented_auc\": 0.9260061919504643, \"incremental_auc\": 0.031888544891640724, \"cyclical_resp_logit_coef\": 0.8537378239421007, \"cyclical_resp_logit_pvalue\": 0.07500542784074453}, \"step6_robustness\": {\"without_secular_erosion_delta_h_peak\": -0.004073534569473481, \"secular_erosion_only_delta_h_peak\": null, \"placebo_shuffle_delta_h_peak\": 0.006656849938124647, \"mi_combined_se_vs_single_draw_ratio\": 1.05}, \"verdict\": \"PARTIAL\", \"verdict_reason\": \"Partial confirmation (2/4 signals). Confirmed: ['halflife_gradient', 'incremental_auc']. Not confirmed: ['delta_positive_significant', 'dominance_wald']\", \"figures\": {\"fig1\": \"/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/outputs/figures/fig1_lp_interactions.pdf\", \"fig2\": \"/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/outputs/figures/fig2_halflife_table.pdf\", \"fig3\": \"/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/outputs/figures/fig3_irfs_by_tercile.pdf\", \"fig4\": \"/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/outputs/figures/fig4_auroc.pdf\", \"fig5\": \"/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/outputs/figures/fig5_country_scatter.pdf\"}}",
+          "metadata_n_countries": 52,
+          "metadata_verdict": "PARTIAL"
+        }
+      ]
+    }
+  ]
+}

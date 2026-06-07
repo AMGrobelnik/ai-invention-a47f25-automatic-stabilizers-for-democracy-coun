@@ -1,0 +1,78 @@
+{
+  "title": "Redistribution Cyclicality and Democratic Resilience: Literature Survey",
+  "summary": "Four sub-questions investigated. (1) Zero prior papers connect redistribution cyclicality or automatic-stabilizer strength to political or democratic outcomes. Adjacent literature studies redistribution LEVEL in static logit models or commodity shocks affecting regime transitions from autocracy, not erosion from democracy via a redistribution cyclicality channel. (2) No LP-based or recovery-rate democratic resilience metric exists in published work; all extant resilience empirics use binary hazard/logit models. Funke et al. (2016) is the nearest method comp but measures political damage after shocks, not democracy recovery half-life. (3) Direct automatic-stabilizer semi-elasticity estimates cover at most 35 OECD countries; SWIID cyclical redistribution proxy is the only tractable measure for the full democratizer sample. (4) Gruss-Kebhaj (2019) fixed-weight CTOT is the recommended primary instrument (182 economies, 1962-2018); Bazzi-Blattman (2014) and Laeven-Valencia banking crisis onset are robustness alternatives. The novelty gap is three-dimensional: cyclical redistribution (not level) x LP recovery half-life (not binary hazard) x commodity ToT plus banking crisis shock instruments.",
+  "answer": "Four sub-questions were investigated with the following findings:\n\n**SQ1 — Prior work connecting redistribution cyclicality to democratic outcomes: ZERO papers found.**\n\nAll adjacent literature branches away from the proposed hypothesis. Rau & Stokes (2025) [1] is the closest paper: it uses the post-tax-post-transfer net Gini — a redistribution LEVEL, not a cyclical measure — in a static logit hazard of democratic erosion onset, using Laebens erosion coding from V-Dem (1995-2020, 23 spells in 22 countries). There is no shock design, no cyclical redistribution component, and no impulse-response metric. McKay & Reis (2016) [2] establishes that automatic stabilizers reduce income-inequality volatility in a quantitative HANK model, but the outcome is macroeconomic welfare, with no democratic or political variable. Janus, Riera-Crichton & Tarufelli (2022) [3] uses commodity ToT shocks to predict political transitions FROM AUTOCRACY TO DEMOCRACY — the opposite direction from democratic erosion — with no redistribution mechanism. Arezki, Imam & Kpodar (2025) [4] uses Gruss-Kebhaj CTOT shocks to predict adoption of fiscal rules and financial openness, not democratic quality or redistribution cyclicality. No paper in any of these adjacent literatures links redistribution cyclicality (SWIID cyclical component, semi-elasticity of net redistribution to the output gap, or automatic-stabilizer strength) to any political outcome variable.\n\n**SQ2 — LP-based democratic resilience metrics: NO precedent found.**\n\nAll existing democratic resilience empirics use binary event models. Boese et al. (2021) [5] uses a two-stage binary process (ERT dataset): Stage 1 is avoiding erosion onset; Stage 2 is averting breakdown. Economic development matters only for Stage 1. Rau & Stokes (2025) [1] uses a logit hazard (discrete and static). Funke, Schularick & Trebesch (2016) [6] is the nearest methodological comp: it uses local projections to trace far-right vote surge after banking crisis onset (Laeven-Valencia) [11]. Their LP measures political DAMAGE following a shock, not democratic-quality recovery half-life as the dependent variable. Using LP to define resilience as the number of periods to recover 50% of a V-Dem index drop has no direct precedent in published work.\n\n**SQ3 — SWIID cyclical proxy vs. OECD direct estimates.**\n\nDirect automatic-stabilizer semi-elasticity estimates exist only for 28 EU Member States (Mourre et al. 2019) [7] and 35 OECD countries (Maravalle & Rawdanowicz 2020) [8] — adding USA, Canada, Japan, Australia, New Zealand, Korea, Switzerland, Norway, and Iceland to the EU-28. Latin America (Brazil, Argentina, Mexico, Colombia, Peru), non-EU Eastern Europe, Sub-Saharan Africa, and Central Asia — comprising the bulk of the democratizer sample — have NO direct automatic-stabilizer estimates. SWIID (Solt 2020, v9.92, April 2026) [9] provides absolute redistribution (market Gini minus disposable Gini) for 199 countries. The cyclical component (HP-filter extraction) serves as a within-country redistribution-cyclicality proxy. Critical caveat: SWIID redistribution is reliable only in country-years where both market and disposable income distributions are directly observed in source data. Recommended strategy: full-sample regressions with SWIID cyclical proxy; robustness check replacing SWIID with Mourre et al. [7] semi-elasticities on the EU-28 subsample.\n\n**SQ4 — Best-practice commodity ToT shock instruments.**\n\nGruss & Kebhaj (2019) IMF WP 2019/021 [4] is the primary recommended instrument: 182 economies, 1962-2018, 45 commodities, fixed-weight version preferred for exogeneity (severs price-quantity feedback via the shift-share logic). Already used in political-outcome research by Janus et al. (2022) [3] and Arezki et al. (2025) [4]. Bazzi & Blattman (2014) AEJ:Macro [10] provides an alternative construction using lagged trade-share weights (original context: conflict identification; main finding: no effect on conflict onset). Laeven & Valencia (2020) [11] Systemic Banking Crises Database II (151 episodes, 1970-2017, updated 2026 to 1970-2025) offers a binary banking crisis onset instrument already used by Funke et al. (2016) [6] for political economy outcomes.\n\n**Novelty conclusion**: The intersection of {redistribution cyclicality} x {LP recovery half-life as resilience metric} x {commodity ToT plus banking crisis shock identification} is unoccupied in the published literature as of June 2026. The gap is confirmed and three-dimensional.",
+  "sources": [
+    {
+      "index": 1,
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2401590121",
+      "title": "Rau & Stokes (2025) — Economic Inequality and Democratic Erosion, PNAS",
+      "summary": "Uses post-tax-post-transfer net Gini (redistribution LEVEL) in a static logit hazard of democratic erosion onset. Laebens erosion coding from V-Dem (1995-2020, 23 spells, 22 countries). No shock design, no cyclical redistribution, no impulse-response."
+    },
+    {
+      "index": 2,
+      "url": "https://doi.org/10.3982/ECTA11574",
+      "title": "McKay & Reis (2016) — The Role of Automatic Stabilizers in the U.S. Business Cycle, Econometrica",
+      "summary": "Quantitative HANK model establishing automatic stabilizers reduce income-inequality volatility and welfare losses. Outcome is macroeconomic welfare — no democratic or political variable."
+    },
+    {
+      "index": 3,
+      "url": "https://doi.org/10.1111/ecpo.12208",
+      "title": "Janus, Riera-Crichton & Tarufelli (2022) — Commodity ToT Shocks and Political Transitions, Economics & Politics 34(3)",
+      "summary": "Commodity CTOT shocks predict political transitions FROM AUTOCRACY TO DEMOCRACY. Studies democratization, not erosion from democracy; no redistribution mechanism. Uses rolling-average CTOT related to Gruss-Kebhaj data."
+    },
+    {
+      "index": 4,
+      "url": "https://www.imf.org/en/Publications/WP/Issues/2019/03/26/Commodity-Terms-of-Trade-46197",
+      "title": "Gruss & Kebhaj (2019) — Commodity Terms of Trade: A New Database, IMF WP 2019/021; and Arezki, Imam & Kpodar (2025) Shocks and Shields, IMF WP 2025/015",
+      "summary": "Gruss-Kebhaj: CTOT indices for 182 economies, 1962-2018, 45 commodities, fixed-weight and time-varying variants. Arezki et al. use Gruss-Kebhaj to study commodity shocks and fiscal institution adoption (not redistribution cyclicality or democracy)."
+    },
+    {
+      "index": 5,
+      "url": "https://doi.org/10.1080/13510347.2021.1889062",
+      "title": "Boese et al. (2021) — How democracies prevail: democratic resilience as a two-stage process, Democratization",
+      "summary": "Two-stage binary resilience framework using ERT dataset. Stage 1: avoid erosion onset; Stage 2: avert breakdown. Economic development matters for Stage 1 only. No LP-based recovery rate metric."
+    },
+    {
+      "index": 6,
+      "url": "https://doi.org/10.1016/j.euroecorev.2016.03.006",
+      "title": "Funke, Schularick & Trebesch (2016) — Going to Extremes: Politics after Financial Crises, European Economic Review",
+      "summary": "Nearest methodological comp. Uses local projections to trace far-right vote surge after banking crisis onset. LP measures political DAMAGE after shock, not democracy recovery half-life. Uses Laeven-Valencia database."
+    },
+    {
+      "index": 7,
+      "url": "https://doi.org/10.2765/236595",
+      "title": "Mourre et al. (2019) — Semi-Elasticities Underlying the Cyclically-Adjusted Budget Balance, EU Discussion Paper 098",
+      "summary": "Direct automatic-stabilizer semi-elasticity estimates for 28 EU Member States ONLY. No coverage for Latin America, non-EU Eastern Europe, or Sub-Saharan Africa."
+    },
+    {
+      "index": 8,
+      "url": "https://doi.org/10.1787/816b1b06-en",
+      "title": "Maravalle & Rawdanowicz (2020) — Automatic Fiscal Stabilisers: Recent Evolution, OECD WP 1636",
+      "summary": "Extends coverage to 35 OECD countries (adds USA, Canada, Japan, Australia, New Zealand, Korea, Switzerland, Norway, Iceland to EU-28). Still excludes Latin America, non-EU Eastern Europe, Sub-Saharan Africa."
+    },
+    {
+      "index": 9,
+      "url": "https://doi.org/10.1111/ssqu.12995",
+      "title": "Solt (2020) — Measuring Income Inequality Across Countries and Over Time: SWIID v9.92",
+      "summary": "SWIID provides absolute and relative redistribution (market Gini minus disposable Gini) for 199 countries. Redistribution series reliable only where both market and disposable income source data are directly observed. Only tractable full-sample measure for democratizer research."
+    },
+    {
+      "index": 10,
+      "url": "https://doi.org/10.1257/mac.6.4.1",
+      "title": "Bazzi & Blattman (2014) — Economic Shocks and Conflict: Evidence from Commodity Prices, AEJ:Macro",
+      "summary": "Export price shocks using lagged trade-share weights. Main finding: no effect of commodity export price shocks on conflict onset. Robustness alternative instrument construction."
+    },
+    {
+      "index": 11,
+      "url": "https://doi.org/10.1057/s41308-020-00107-3",
+      "title": "Laeven & Valencia (2020) — Systemic Banking Crises Database II, IMF Economic Review",
+      "summary": "151 systemic banking crisis episodes, 1970-2017 (updated 2026 to 1970-2025). Binary crisis onset largely exogenous to any single country's fiscal architecture. Used by Funke et al. (2016) for political economy outcomes."
+    }
+  ],
+  "follow_up_questions": [
+    "Does the cyclical component of SWIID redistribution (HP-filtered) correlate sufficiently with Mourre et al. semi-elasticity estimates in the EU-28 validation subsample to justify its use as a proxy — and what is the minimum acceptable correlation coefficient?",
+    "Is the first-stage F-statistic of the Gruss-Kebhaj fixed-weight CTOT instrument strong enough in the democratizer subsample (post-1990 new democracies) where commodity export exposure may be concentrated in a smaller set of commodities?",
+    "Can Laebens erosion coding (V-Dem based, 23 spells, 1995-2020) be extended or supplemented with ERT or POLITY-based codings to increase treated country-years available for LP estimation of democracy recovery half-life?"
+  ]
+}

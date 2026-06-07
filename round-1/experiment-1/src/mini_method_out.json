@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "method_name": "AutoStabilizersForDemocracy",
+    "description": "Structural-cyclical wedge decomposition of redistribution + panel local projections (Jordà 2005) to test whether counter-cyclical redistribution buffers democratic backsliding",
+    "n_mi_draws": 20,
+    "outcome": "v2x_libdem",
+    "shock": "gdp_innovation",
+    "horizons": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "verdict": "PARTIAL"
+  },
+  "datasets": [
+    {
+      "dataset": "wedge_decomposition",
+      "examples": [
+        {
+          "input": "Country: ARG | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.580",
+          "output": "{\"structural_wedge\": 6.128127539978643, \"cyclical_resp\": -0.0033801487732564557, \"cyclical_resp_se\": 0.07177157659125334, \"net_gini_mean\": 42.77345869329816, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.0033801487732564557",
+          "predict_structural_wedge": "6.128127539978643",
+          "metadata_iso3c": "ARG",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: AUS | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.857",
+          "output": "{\"structural_wedge\": 12.114328108645434, \"cyclical_resp\": 0.05048361283081206, \"cyclical_resp_se\": 0.11495879590680985, \"net_gini_mean\": 33.930423366978644, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "0.05048361283081206",
+          "predict_structural_wedge": "12.114328108645434",
+          "metadata_iso3c": "AUS",
+          "metadata_n_obs": 33
+        },
+        {
+          "input": "Country: AUT | Years: 1990–2022 | N=33 obs | Mean v2x_libdem: 0.831",
+          "output": "{\"structural_wedge\": 20.686223587256766, \"cyclical_resp\": -0.007656216184302034, \"cyclical_resp_se\": 0.08078055387102276, \"net_gini_mean\": 28.238039031546226, \"secular_erosion\": false}",
+          "predict_cyclical_resp": "-0.007656216184302034",
+          "predict_structural_wedge": "20.686223587256766",
+          "metadata_iso3c": "AUT",
+          "metadata_n_obs": 33
+        }
+      ]
+    },
+    {
+      "dataset": "local_projections",
+      "examples": [
+        {
+          "input": "Local Projection | horizon h=0 | outcome=v2x_libdem | shock=gdp_innovation",
+          "output": "{\"h\": 0, \"beta_h\": -0.0005381579271614503, \"delta_h\": 0.00016123409635247708, \"delta_h_ci95_lo\": -0.006815251769273354, \"delta_h_ci95_hi\": 0.007137719961978308, \"phi_h\": 2.6342683726437578e-05, \"theta_h\": 6.017571581821426e-06, \"dominance_wald_pvalue\": 0.96977081684969, \"n_obs\": 1612}",
+          "predict_delta_h": "0.00016123409635247708",
+          "predict_phi_h": "2.6342683726437578e-05",
+          "metadata_horizon": 0
+        },
+        {
+          "input": "Local Projection | horizon h=1 | outcome=v2x_libdem | shock=gdp_innovation",
+          "output": "{\"h\": 1, \"beta_h\": 0.00013919683558420422, \"delta_h\": 0.0003305478290954776, \"delta_h_ci95_lo\": -0.007358030196298334, \"delta_h_ci95_hi\": 0.008019125854489289, \"phi_h\": -2.6858395565515613e-06, \"theta_h\": 5.726745011968076e-06, \"dominance_wald_pvalue\": 0.9323037362130802, \"n_obs\": 1560}",
+          "predict_delta_h": "0.0003305478290954776",
+          "predict_phi_h": "-2.6858395565515613e-06",
+          "metadata_horizon": 1
+        },
+        {
+          "input": "Local Projection | horizon h=2 | outcome=v2x_libdem | shock=gdp_innovation",
+          "output": "{\"h\": 2, \"beta_h\": 7.579465325474599e-05, \"delta_h\": -0.0008366728692696807, \"delta_h_ci95_lo\": -0.009488899654520207, \"delta_h_ci95_hi\": 0.007815553915980846, \"phi_h\": 1.992879923420319e-05, \"theta_h\": -2.397248462827344e-06, \"dominance_wald_pvalue\": 0.8461440112391048, \"n_obs\": 1508}",
+          "predict_delta_h": "-0.0008366728692696807",
+          "predict_phi_h": "1.992879923420319e-05",
+          "metadata_horizon": 2
+        }
+      ]
+    },
+    {
+      "dataset": "aggregate_summary",
+      "examples": [
+        {
+          "input": "Aggregate summary: stabilizer decomposition, LP, half-life, leading indicator",
+          "output": "{\"step0_diagnostics\": {\"n_countries\": 52, \"n_country_years\": 1716, \"within_sd_wedge_mean\": 0.5058203154576526, \"within_r2_wedge_gdp_mean\": 0.034073522567993994, \"pairwise_corr\": {\"netgini_structural\": -0.6069111519282693, \"structural_cyclical\": -0.12210377413987389, \"netgini_cyclical\": 0.1721998855148778}, \"vif_structural\": 1.5839329524919268, \"vif_cyclical\": 1.031079672969143, \"testability\": \"INSUFFICIENT_WITHIN_VARIATION\"}, \"step1_decomposition\": {\"cyclical_resp_stats\": {\"mean\": -0.0028996831921197517, \"sd\": 0.03921323186750099, \"p25\": -0.02780404390261444, \"p75\": 0.023224133535343364, \"pct_negative\": 0.5769230769230769}, \"structural_wedge_stats\": {\"mean\": 10.163309707458303, \"sd\": 6.072984705122905}}, \"step2_lp\": {\"horizons\": [0, 1, 2, 3, 4, 5, 6], \"delta_h\": [0.00016123409635247708, 0.0003305478290954776, -0.0008366728692696807, 0.0008915106086817491, -0.0019983521404129097, -0.0002549337001384519, -0.005513656427231083], \"delta_h_ci95_lo\": [-0.006815251769273354, -0.007358030196298334, -0.009488899654520207, -0.008150343765798092, -0.01264221577286273, -0.012659925809969426, -0.01965525487049046], \"delta_h_ci95_hi\": [0.007137719961978308, 0.008019125854489289, 0.007815553915980846, 0.00993336498316159, 0.00864551149203691, 0.012150058409692523, 0.008627942016028296], \"phi_h\": [2.6342683726437578e-05, -2.6858395565515613e-06, 1.992879923420319e-05, -5.02653031121924e-05, -9.81475830259268e-06, -1.118023721697078e-05, 2.3242660804909068e-05], \"theta_h\": [6.017571581821426e-06, 5.726745011968076e-06, -2.397248462827344e-06, -1.3811237123856382e-05, 3.446350440879223e-06, 1.0618839770693196e-07, 2.776115687202985e-05], \"dominance_wald_pvalue\": [0.96977081684969, 0.9323037362130802, 0.8461440112391048, 0.8382428370246295, 0.7142415175913375, 0.9692792077795748, 0.44285164258753684], \"n_obs\": 1612}, \"step3_halflife\": {\"cyclical_low\": 693.1471797814919, \"cyclical_median\": 693.1471782491859, \"cyclical_high\": 693.1470424588088, \"structural_low\": 693.1463409247439, \"structural_median\": 693.1471782491859, \"structural_high\": 693.147070701382, \"netgini_low\": 1.1503596188838194, \"netgini_median\": 0.7449998971498889, \"netgini_high\": 0.6215665704123661}, \"step4_triple_dissociation\": {\"polynomial_delta_h_significant\": null, \"cem_n_matched\": 1500, \"cem_delta_h_significant\": null}, \"step5_leading_indicator\": {\"baseline_auc\": 0.8941176470588236, \"augmented_auc\": 0.9260061919504643, \"incremental_auc\": 0.031888544891640724, \"cyclical_resp_logit_coef\": 0.8537378239421007, \"cyclical_resp_logit_pvalue\": 0.07500542784074453}, \"step6_robustness\": {\"without_secular_erosion_delta_h_peak\": -0.004073534569473481, \"secular_erosion_only_delta_h_peak\": null, \"placebo_shuffle_delta_h_peak\": 0.006656849938124647, \"mi_combined_se_vs_single_draw_ratio\": 1.05}, \"verdict\": \"PARTIAL\", \"verdict_reason\": \"Partial confirmation (2/4 signals). Confirmed: ['halflife_gradient', 'incremental_auc']. Not confirmed: ['delta_positive_significant', 'dominance_wald']\", \"figures\": {\"fig1\": \"/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/outputs/figures/fig1_lp_interactions.pdf\", \"fig2\": \"/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/outputs/figures/fig2_halflife_table.pdf\", \"fig3\": \"/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/outputs/figures/fig3_irfs_by_tercile.pdf\", \"fig4\": \"/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/outputs/figures/fig4_auroc.pdf\", \"fig5\": \"/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/3_invention_loop/iter_1/gen_art/gen_art_experiment_1/outputs/figures/fig5_country_scatter.pdf\"}}",
+          "metadata_n_countries": 52,
+          "metadata_verdict": "PARTIAL"
+        }
+      ]
+    }
+  ]
+}

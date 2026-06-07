@@ -1,0 +1,134 @@
+{
+  "datasets": [
+    {
+      "dataset": "panel_primary",
+      "examples": [
+        {
+          "input": "{\"year\": 1996, \"gini_disp_se\": 2.48, \"gini_mkt\": 47.6, \"gini_mkt_se\": 4.17, \"iso3\": \"ALB\", \"v2x_polyarchy\": 0.387, \"v2x_libdem\": 0.321, \"gdppc_maddison\": 3965.685302734375, \"gdp_growth\": 8.00551384353483, \"gdppc_ppp_wb\": 5563.79315082011, \"terms_of_trade\": null, \"ln_gdppc\": 8.285433957150415}",
+          "output": "35.8",
+          "metadata_row_index": 0,
+          "metadata_iso3": "ALB",
+          "metadata_year": 1996
+        },
+        {
+          "input": "{\"year\": 1997, \"gini_disp_se\": 2.42, \"gini_mkt\": 47.8, \"gini_mkt_se\": 4.07, \"iso3\": \"ALB\", \"v2x_polyarchy\": 0.371, \"v2x_libdem\": 0.311, \"gdppc_maddison\": 3526.985595703125, \"gdp_growth\": -11.1576605254893, \"gdppc_ppp_wb\": 4943.00399871118, \"terms_of_trade\": null, \"ln_gdppc\": 8.168198846219525}",
+          "output": "35.9",
+          "metadata_row_index": 1,
+          "metadata_iso3": "ALB",
+          "metadata_year": 1997
+        },
+        {
+          "input": "{\"year\": 1998, \"gini_disp_se\": 2.42, \"gini_mkt\": 48.0, \"gini_mkt_se\": 3.98, \"iso3\": \"ALB\", \"v2x_polyarchy\": 0.39, \"v2x_libdem\": 0.323, \"gdppc_maddison\": 3873.373046875, \"gdp_growth\": 8.99380682261059, \"gdppc_ppp_wb\": 5387.56822958918, \"terms_of_trade\": null, \"ln_gdppc\": 8.261880994751065}",
+          "output": "36.1",
+          "metadata_row_index": 2,
+          "metadata_iso3": "ALB",
+          "metadata_year": 1998
+        }
+      ]
+    },
+    {
+      "dataset": "swiid_summary",
+      "examples": [
+        {
+          "input": "{\"country\": \"Afghanistan\", \"year\": 2007, \"gini_disp_se\": 2.48, \"gini_mkt\": 32.7, \"gini_mkt_se\": 2.72, \"abs_red\": null, \"rel_red\": null}",
+          "output": "31.4",
+          "metadata_row_index": 0,
+          "metadata_country": "Afghanistan",
+          "metadata_year": 2007
+        },
+        {
+          "input": "{\"country\": \"Afghanistan\", \"year\": 2008, \"gini_disp_se\": 2.4, \"gini_mkt\": 32.8, \"gini_mkt_se\": 2.65, \"abs_red\": null, \"rel_red\": null}",
+          "output": "31.4",
+          "metadata_row_index": 1,
+          "metadata_country": "Afghanistan",
+          "metadata_year": 2008
+        },
+        {
+          "input": "{\"country\": \"Afghanistan\", \"year\": 2009, \"gini_disp_se\": 2.45, \"gini_mkt\": 32.9, \"gini_mkt_se\": 2.72, \"abs_red\": null, \"rel_red\": null}",
+          "output": "31.5",
+          "metadata_row_index": 2,
+          "metadata_country": "Afghanistan",
+          "metadata_year": 2009
+        }
+      ]
+    },
+    {
+      "dataset": "vdem_polyarchy",
+      "examples": [
+        {
+          "input": "{\"country\": \"Afghanistan\", \"iso3\": \"AFG\", \"year\": 1990}",
+          "output": "0.094",
+          "metadata_row_index": 201,
+          "metadata_iso3": "AFG",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"country\": \"Afghanistan\", \"iso3\": \"AFG\", \"year\": 1991}",
+          "output": "0.094",
+          "metadata_row_index": 202,
+          "metadata_iso3": "AFG",
+          "metadata_year": 1991
+        },
+        {
+          "input": "{\"country\": \"Afghanistan\", \"iso3\": \"AFG\", \"year\": 1992}",
+          "output": "0.095",
+          "metadata_row_index": 203,
+          "metadata_iso3": "AFG",
+          "metadata_year": 1992
+        }
+      ]
+    },
+    {
+      "dataset": "maddison_gdppc",
+      "examples": [
+        {
+          "input": "{\"country\": \"Afghanistan\", \"year\": 1990, \"region\": \"South and South East Asia\", \"population\": 13568000.0}",
+          "output": "963.0",
+          "metadata_row_index": 43,
+          "metadata_country": "Afghanistan",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"country\": \"Afghanistan\", \"year\": 1991, \"region\": \"South and South East Asia\", \"population\": 13672000.0}",
+          "output": "881.17041",
+          "metadata_row_index": 44,
+          "metadata_country": "Afghanistan",
+          "metadata_year": 1991
+        },
+        {
+          "input": "{\"country\": \"Afghanistan\", \"year\": 1992, \"region\": \"South and South East Asia\", \"population\": 15023000.0}",
+          "output": "843.875366",
+          "metadata_row_index": 45,
+          "metadata_country": "Afghanistan",
+          "metadata_year": 1992
+        }
+      ]
+    },
+    {
+      "dataset": "wb_tot",
+      "examples": [
+        {
+          "input": "{\"iso3\": \"WLD\", \"country\": \"World\", \"year\": 2023}",
+          "output": "100.2",
+          "metadata_row_index": 0,
+          "metadata_iso3": "WLD",
+          "metadata_year": 2023
+        },
+        {
+          "input": "{\"iso3\": \"WLD\", \"country\": \"World\", \"year\": 2022}",
+          "output": "101.0",
+          "metadata_row_index": 1,
+          "metadata_iso3": "WLD",
+          "metadata_year": 2022
+        },
+        {
+          "input": "{\"iso3\": \"WLD\", \"country\": \"World\", \"year\": 2021}",
+          "output": "101.3",
+          "metadata_row_index": 2,
+          "metadata_iso3": "WLD",
+          "metadata_year": 2021
+        }
+      ]
+    }
+  ]
+}

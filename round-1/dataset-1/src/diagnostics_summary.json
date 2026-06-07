@@ -1,0 +1,64 @@
+{
+  "panel_full": {
+    "n_rows": 4555,
+    "n_countries": 152,
+    "year_range": [
+      1990,
+      2025
+    ],
+    "variable_coverage": {
+      "year": {
+        "n_nonmissing": 4555,
+        "pct_coverage": 100.0
+      },
+      "gini_disp": {
+        "n_nonmissing": 4555,
+        "pct_coverage": 100.0
+      },
+      "gini_disp_se": {
+        "n_nonmissing": 4555,
+        "pct_coverage": 100.0
+      },
+      "gini_mkt": {
+        "n_nonmissing": 4555,
+        "pct_coverage": 100.0
+      },
+      "gini_mkt_se": {
+        "n_nonmissing": 4555,
+        "pct_coverage": 100.0
+      },
+      "v2x_polyarchy": {
+        "n_nonmissing": 4553,
+        "pct_coverage": 100.0
+      },
+      "v2x_libdem": {
+        "n_nonmissing": 4553,
+        "pct_coverage": 100.0
+      },
+      "gdppc_maddison": {
+        "n_nonmissing": 4311,
+        "pct_coverage": 94.6
+      },
+      "gdp_growth": {
+        "n_nonmissing": 4483,
+        "pct_coverage": 98.4
+      },
+      "gdppc_ppp_wb": {
+        "n_nonmissing": 4407,
+        "pct_coverage": 96.8
+      },
+      "terms_of_trade": {
+        "n_nonmissing": 3800,
+        "pct_coverage": 83.4
+      }
+    }
+  },
+  "panel_primary": {
+    "n_rows": 4441,
+    "n_countries": 150,
+    "year_range": [
+      1990,
+      2023
+    ]
+  }
+}
