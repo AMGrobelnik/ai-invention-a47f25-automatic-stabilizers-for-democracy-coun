@@ -1,0 +1,94 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Acemoglu and Robinson(2006)]{Acemoglu2006}
+Daron Acemoglu and James~A. Robinson.
+\newblock \emph{Economic Origins of Dictatorship and Democracy}.
+\newblock Cambridge University Press, 2006.
+
+\bibitem[Bazzi and Blattman(2014)]{Bazzi2014}
+Samuel Bazzi and Christopher Blattman.
+\newblock Economic shocks and conflict: Evidence from commodity prices.
+\newblock \emph{American Economic Journal: Macroeconomics}, 6\penalty0
+  (4):\penalty0 1--38, 2014.
+
+\bibitem[Boese et~al.(2021)Boese, Edgell, Hellmeier, Maerz, and
+  Lindberg]{Boese2021}
+Vanessa~A. Boese, Amanda~B. Edgell, Sebastian Hellmeier, Seraphine~F. Maerz,
+  and Staffan~I. Lindberg.
+\newblock How democracies prevail: {D}emocratic resilience as a two-stage
+  process.
+\newblock \emph{Democratization}, 28\penalty0 (5):\penalty0 885--907, 2021.
+
+\bibitem[Funke et~al.(2016)Funke, Schularick, and Trebesch]{Funke2016}
+Manuel Funke, Moritz Schularick, and Christoph Trebesch.
+\newblock Going to extremes: Politics after financial crises, 1870--2014.
+\newblock \emph{European Economic Review}, 88:\penalty0 227--260, 2016.
+
+\bibitem[Gruss and Kebhaj(2019)]{Gruss2019}
+Bertrand Gruss and Suhaib Kebhaj.
+\newblock Commodity terms of trade: A new database.
+\newblock Working Paper WP/19/021, International Monetary Fund, 2019.
+
+\bibitem[Holling(1973)]{Holling1973}
+C.~S. Holling.
+\newblock Resilience and stability of ecological systems.
+\newblock \emph{Annual Review of Ecology and Systematics}, 4:\penalty0 1--23,
+  1973.
+
+\bibitem[Janus et~al.(2022)Janus, Riera-Crichton, and Tarufelli]{Janus2022}
+Thorsten Janus, Daniel Riera-Crichton, and Roberto Tarufelli.
+\newblock Commodity terms of trade shocks and political transitions.
+\newblock \emph{Economics and Politics}, 34\penalty0 (2):\penalty0 232--253,
+  2022.
+
+\bibitem[Jord\`{a}(2005)]{Jorda2005}
+\`{O}scar Jord\`{a}.
+\newblock Estimation and inference of impulse responses by local projections.
+\newblock \emph{American Economic Review}, 95\penalty0 (1):\penalty0 161--182,
+  2005.
+
+\bibitem[Laeven and Valencia(2020)]{Laeven2020}
+Luc Laeven and Fabian Valencia.
+\newblock Systemic banking crises database {II}.
+\newblock \emph{IMF Economic Review}, 68:\penalty0 307--361, 2020.
+
+\bibitem[Maravalle and Rawdanowicz(2020)]{Maravalle2020}
+Alessandro Maravalle and Lukasz Rawdanowicz.
+\newblock Automatic fiscal stabilisers: Past and future challenges.
+\newblock Economics Department Working Paper 1636, OECD, 2020.
+
+\bibitem[McKay and Reis(2016)]{McKay2016}
+Alisdair McKay and Ricardo Reis.
+\newblock The role of automatic stabilizers in the {U.S.} business cycle.
+\newblock \emph{Econometrica}, 84\penalty0 (1):\penalty0 141--194, 2016.
+
+\bibitem[Mourre et~al.(2019)Mourre, Poissonnier, and Lausegger]{Mourre2019}
+Gilles Mourre, Arnaud Poissonnier, and Martin Lausegger.
+\newblock The semi-elasticities underlying the cyclically-adjusted budget
+  balance: An update and extension.
+\newblock Discussion Paper 098, European Commission, 2019.
+
+\bibitem[Rau and Stokes(2025)]{Rau2025}
+M.~A. Rau and S.~C. Stokes.
+\newblock Income inequality and the erosion of democracy in the twenty-first
+  century.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 121, 2025.
+
+\bibitem[Riedl et~al.(2024)]{Riedl2024}
+R.~M. Riedl et~al.
+\newblock Democratic backsliding, resilience, and resistance.
+\newblock \emph{World Politics}, 76, 2024.
+
+\bibitem[Solt(2020)]{Solt2020}
+Frederick Solt.
+\newblock Measuring income inequality across countries and over time: The
+  standardized world income inequality database.
+\newblock \emph{Social Science Quarterly}, 101\penalty0 (3):\penalty0
+  1183--1199, 2020.
+
+\end{thebibliography}

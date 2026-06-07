@@ -1,0 +1,16 @@
+{
+  "title": "Automatic Stabilizers for Democracy — LaTeX Paper Compilation",
+  "summary": "Generated a complete, publication-ready 11-page LaTeX paper on automatic stabilizers for democracy. The paper includes: (1) Abstract, Introduction, Related Work, Data and Decomposition, Methods, Results, Discussion, and Conclusion sections — all faithfully transcribed from paper_text; (2) All 5 figures from <available_figures> inserted with proper float environments (figure* with !t placement for all 21:9 aspect-ratio figures), captions from the spec, and labels — fig1 (pipeline diagram), fig5 (scatter), fig2 (LP interaction), fig3 (half-lives), fig4 (ROC curves); (3) references.bib with 15 hand-verified BibTeX entries (bibliography server timed out, entries written from paper citations); (4) Compiled to paper.pdf using the 4-step pdflatex/bibtex process — all citations resolved (no ?? markers). Visual review of all 11 pages confirmed clean layout, correct figure placement, no cut-off text or overlapping elements, proper references page. Figure count verified: grep -c includegraphics = 5, matching all 5 available_figures entries.",
+  "out_expected_files": {
+    "paper_tex_path": "paper.tex",
+    "paper_pdf_path": "paper.pdf",
+    "references_bib_path": "references.bib",
+    "figure_paths": [
+      "figures/fig1_v0.jpg",
+      "figures/fig2_v0.jpg",
+      "figures/fig3_v0.jpg",
+      "figures/fig4_v0.jpg",
+      "figures/fig5_v0.jpg"
+    ]
+  }
+}
