@@ -1,0 +1,15 @@
+{
+  "kind": "code_demo",
+  "id": "gen_art_experiment_1",
+  "type": "code",
+  "iteration": 1,
+  "title": "Automatic Stabilizers for Democracy: Wedge Decomposition & Panel Local Projections",
+  "summary": "This experiment implements a full econometric pipeline for testing the hypothesis that automatic fiscal stabilizers buffer democratic backsliding during economic downturns. Starting from synthetic panel data (52 countries, 1990-2022) replicating SWIID, V-Dem, and Maddison GDP sources (all real download attempts failed: SWIID GitHub 404, vdemdata not on PyPI, Maddison encoding issues), the pipeline proceeds through six analytical steps: (1) SWIID wedge decomposition via 100 multiple-imputation draws with Rubin's rules pooling, separating each country's redistribution into a time-invariant structural component (country mean abs_red) and a cyclical responsiveness coefficient (\u2212\u03b2_GDP from per-country OLS); (2) Panel local projections (Jord\u00e0 2005) for h=0..6 with entity+time fixed effects and custom Driscoll-Kraay standard errors, testing interactions of GDP growth innovations with cyclical_resp, structural_wedge, and net_gini; (3) IRF half-life estimation by moderator tercile using exponential decay curve fitting; (4) Triple dissociation via polynomial controls and Coarsened Exact Matching; (5) Leading indicator test using logit + 5-fold stratified CV AUROC comparing baseline vs cyclical_resp-augmented models; (6) Robustness checks including secular-erosion exclusion, placebo shuffle, and MI uncertainty ratios. The verdict is PARTIAL: half-life gradient and incremental AUROC confirmed (2/4 signals), but LP interaction delta_h coefficients are weak and the dominance Wald test is not significant on synthetic data. Five figures are generated: LP interaction coefficients across horizons, half-life bar chart by moderator tercile, IRF curves by cyclical responsiveness tercile, ROC curves for backsliding prediction, and country scatter of cyclical vs structural redistribution components. Output conforms to exp_gen_sol_out schema with 60 examples across three datasets: wedge_decomposition (52 per-country estimates), local_projections (7 per-horizon coefficients), and aggregate_summary (1 full results record).",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/3_invention_loop/iter_1/gen_art/gen_art_experiment_1",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/4_gen_paper_repo/_3_gen_art_demo/iter_1/gen_art_experiment_1",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/4_gen_paper_repo/_3_gen_art_demo/iter_1/gen_art_experiment_1/method_code_demo.ipynb"
+}

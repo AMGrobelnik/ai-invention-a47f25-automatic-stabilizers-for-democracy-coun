@@ -1,0 +1,359 @@
+{
+  "datasets": [
+    {
+      "dataset": "panel_primary",
+      "examples": [
+        {
+          "input": "{\"year\": 1996, \"gini_disp_se\": 2.48, \"gini_mkt\": 47.6, \"gini_mkt_se\": 4.17, \"iso3\": \"ALB\", \"v2x_polyarchy\": 0.387, \"v2x_libdem\": 0.321, \"gdppc_maddison\": 3965.685302734375, \"gdp_growth\": 8.00551384353483, \"gdppc_ppp_wb\": 5563.79315082011, \"terms_of_trade\": null, \"ln_gdppc\": 8.285433957150415}",
+          "output": "35.8",
+          "metadata_row_index": 0,
+          "metadata_iso3": "ALB",
+          "metadata_year": 1996
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 2.84, \"gini_mkt\": 38.4, \"gini_mkt_se\": 3.14, \"iso3\": \"DZA\", \"v2x_polyarchy\": 0.35, \"v2x_libdem\": 0.164, \"gdppc_maddison\": 4697.0, \"gdp_growth\": -1.66808064996022, \"gdppc_ppp_wb\": 11728.5457286791, \"terms_of_trade\": 39.2704496682, \"ln_gdppc\": 8.454679286026995}",
+          "output": "37.1",
+          "metadata_row_index": 27,
+          "metadata_iso3": "DZA",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 2000, \"gini_disp_se\": 3.24, \"gini_mkt\": 52.4, \"gini_mkt_se\": 3.41, \"iso3\": \"AGO\", \"v2x_polyarchy\": 0.155, \"v2x_libdem\": 0.077, \"gdppc_maddison\": 2013.63623046875, \"gdp_growth\": -0.302928309232016, \"gdppc_ppp_wb\": 6796.40633958013, \"terms_of_trade\": 72.5572349264, \"ln_gdppc\": 7.607697436542009}",
+          "output": "50.5",
+          "metadata_row_index": 49,
+          "metadata_iso3": "AGO",
+          "metadata_year": 2000
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 1.29, \"gini_mkt\": 44.7, \"gini_mkt_se\": 2.64, \"iso3\": \"ARG\", \"v2x_polyarchy\": 0.826, \"v2x_libdem\": 0.617, \"gdppc_maddison\": 10254.0, \"gdp_growth\": -3.91119229289714, \"gdppc_ppp_wb\": 17007.2844317191, \"terms_of_trade\": 43.4313492561, \"ln_gdppc\": 9.235423152343646}",
+          "output": "42.7",
+          "metadata_row_index": 68,
+          "metadata_iso3": "ARG",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1991, \"gini_disp_se\": 1.83, \"gini_mkt\": 45.7, \"gini_mkt_se\": 2.9, \"iso3\": \"ARM\", \"v2x_polyarchy\": 0.608, \"v2x_libdem\": 0.348, \"gdppc_maddison\": 8141.6708984375, \"gdp_growth\": -13.2111499901537, \"gdppc_ppp_wb\": 5326.75285558236, \"terms_of_trade\": null, \"ln_gdppc\": 9.004750708009883}",
+          "output": "32.4",
+          "metadata_row_index": 102,
+          "metadata_iso3": "ARM",
+          "metadata_year": 1991
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 0.99, \"gini_mkt\": 43.6, \"gini_mkt_se\": 1.2, \"iso3\": \"AUS\", \"v2x_polyarchy\": 0.892, \"v2x_libdem\": 0.851, \"gdppc_maddison\": 27373.0, \"gdp_growth\": 2.05133530941588, \"gdppc_ppp_wb\": 36267.7410592234, \"terms_of_trade\": null, \"ln_gdppc\": 10.217312405089107}",
+          "output": "29.8",
+          "metadata_row_index": 135,
+          "metadata_iso3": "AUS",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1994, \"gini_disp_se\": 0.86, \"gini_mkt\": 45.8, \"gini_mkt_se\": 0.93, \"iso3\": \"AUT\", \"v2x_polyarchy\": 0.858, \"v2x_libdem\": 0.782, \"gdppc_maddison\": 28780.759765625, \"gdp_growth\": 2.00876130503556, \"gdppc_ppp_wb\": 45497.1385930997, \"terms_of_trade\": null, \"ln_gdppc\": 10.267462379176473}",
+          "output": "30.5",
+          "metadata_row_index": 166,
+          "metadata_iso3": "AUT",
+          "metadata_year": 1994
+        },
+        {
+          "input": "{\"year\": 1991, \"gini_disp_se\": 1.88, \"gini_mkt\": 40.7, \"gini_mkt_se\": 2.55, \"iso3\": \"AZE\", \"v2x_polyarchy\": 0.186, \"v2x_libdem\": 0.095, \"gdppc_maddison\": 7319.13623046875, \"gdp_growth\": -2.01238310352751, \"gdppc_ppp_wb\": 10559.2119361527, \"terms_of_trade\": null, \"ln_gdppc\": 8.898247598690572}",
+          "output": "31.0",
+          "metadata_row_index": 196,
+          "metadata_iso3": "AZE",
+          "metadata_year": 1991
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 1.96, \"gini_mkt\": 35.8, \"gini_mkt_se\": 2.0, \"iso3\": \"BGD\", \"v2x_polyarchy\": 0.302, \"v2x_libdem\": 0.162, \"gdppc_maddison\": 1006.0, \"gdp_growth\": 3.54080541439843, \"gdppc_ppp_wb\": 2069.78230100672, \"terms_of_trade\": 169.7160122356, \"ln_gdppc\": 6.913737350659685}",
+          "output": "30.2",
+          "metadata_row_index": 214,
+          "metadata_iso3": "BGD",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 3.58, \"gini_mkt\": 47.9, \"gini_mkt_se\": 4.48, \"iso3\": \"BRB\", \"v2x_polyarchy\": 0.748, \"v2x_libdem\": 0.636, \"gdppc_maddison\": 12994.0, \"gdp_growth\": -3.48446373308893, \"gdppc_ppp_wb\": 19613.2480547673, \"terms_of_trade\": null, \"ln_gdppc\": 9.472242991440476}",
+          "output": "45.0",
+          "metadata_row_index": 247,
+          "metadata_iso3": "BRB",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1991, \"gini_disp_se\": 1.49, \"gini_mkt\": 31.0, \"gini_mkt_se\": 2.24, \"iso3\": \"BLR\", \"v2x_polyarchy\": 0.489, \"v2x_libdem\": 0.368, \"gdppc_maddison\": 11170.7607421875, \"gdp_growth\": -1.24556719322608, \"gdppc_ppp_wb\": 12197.7877887634, \"terms_of_trade\": null, \"ln_gdppc\": 9.321054995580093}",
+          "output": "21.9",
+          "metadata_row_index": 275,
+          "metadata_iso3": "BLR",
+          "metadata_year": 1991
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 1.29, \"gini_mkt\": 44.5, \"gini_mkt_se\": 1.53, \"iso3\": \"BEL\", \"v2x_polyarchy\": 0.869, \"v2x_libdem\": 0.797, \"gdppc_maddison\": 27412.0, \"gdp_growth\": 2.8302678771237, \"gdppc_ppp_wb\": 41640.0583572132, \"terms_of_trade\": null, \"ln_gdppc\": 10.218736152705715}",
+          "output": "23.4",
+          "metadata_row_index": 308,
+          "metadata_iso3": "BEL",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 2002, \"gini_disp_se\": 2.42, \"gini_mkt\": 45.0, \"gini_mkt_se\": 2.59, \"iso3\": \"BEN\", \"v2x_polyarchy\": 0.61, \"v2x_libdem\": 0.502, \"gdppc_maddison\": 1934.396728515625, \"gdp_growth\": 1.50964025698303, \"gdppc_ppp_wb\": 2630.18061029627, \"terms_of_trade\": 75.0470381617, \"ln_gdppc\": 7.567550788645091}",
+          "output": "43.3",
+          "metadata_row_index": 342,
+          "metadata_iso3": "BEN",
+          "metadata_year": 2002
+        },
+        {
+          "input": "{\"year\": 2003, \"gini_disp_se\": 2.6, \"gini_mkt\": 42.1, \"gini_mkt_se\": 2.89, \"iso3\": \"BTN\", \"v2x_polyarchy\": 0.096, \"v2x_libdem\": 0.158, \"gdppc_maddison\": null, \"gdp_growth\": 5.5461872466835, \"gdppc_ppp_wb\": 6323.5411950973, \"terms_of_trade\": 90.3777255048, \"ln_gdppc\": 8.752034645902638}",
+          "output": "40.8",
+          "metadata_row_index": 362,
+          "metadata_iso3": "BTN",
+          "metadata_year": 2003
+        },
+        {
+          "input": "{\"year\": 1992, \"gini_disp_se\": 1.72, \"gini_mkt\": 47.5, \"gini_mkt_se\": 2.77, \"iso3\": \"BOL\", \"v2x_polyarchy\": 0.697, \"v2x_libdem\": 0.462, \"gdppc_maddison\": 3592.13671875, \"gdp_growth\": -0.406134714304287, \"gdppc_ppp_wb\": 6414.32866802843, \"terms_of_trade\": 75.369405732, \"ln_gdppc\": 8.186502490710556}",
+          "output": "48.7",
+          "metadata_row_index": 382,
+          "metadata_iso3": "BOL",
+          "metadata_year": 1992
+        },
+        {
+          "input": "{\"year\": 2001, \"gini_disp_se\": 2.62, \"gini_mkt\": 48.8, \"gini_mkt_se\": 4.66, \"iso3\": \"BIH\", \"v2x_polyarchy\": 0.654, \"v2x_libdem\": 0.424, \"gdppc_maddison\": 7129.38671875, \"gdp_growth\": 1.94134423240946, \"gdppc_ppp_wb\": 7982.55195738094, \"terms_of_trade\": 95.4429797287, \"ln_gdppc\": 8.871980495508348}",
+          "output": "37.8",
+          "metadata_row_index": 414,
+          "metadata_iso3": "BIH",
+          "metadata_year": 2001
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 3.34, \"gini_mkt\": 59.5, \"gini_mkt_se\": 3.07, \"iso3\": \"BWA\", \"v2x_polyarchy\": 0.683, \"v2x_libdem\": 0.577, \"gdppc_maddison\": 5267.0, \"gdp_growth\": 3.87620060854523, \"gdppc_ppp_wb\": 10520.9183978405, \"terms_of_trade\": 107.6608149581, \"ln_gdppc\": 8.569216219483389}",
+          "output": "56.2",
+          "metadata_row_index": 435,
+          "metadata_iso3": "BWA",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 0.54, \"gini_mkt\": 60.5, \"gini_mkt_se\": 0.58, \"iso3\": \"BRA\", \"v2x_polyarchy\": 0.814, \"v2x_libdem\": 0.678, \"gdppc_maddison\": 7842.0, \"gdp_growth\": -6.04327176300885, \"gdppc_ppp_wb\": 12633.2884559605, \"terms_of_trade\": 61.878477937, \"ln_gdppc\": 8.967249182852276}",
+          "output": "56.9",
+          "metadata_row_index": 461,
+          "metadata_iso3": "BRA",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 1.62, \"gini_mkt\": 40.9, \"gini_mkt_se\": 2.91, \"iso3\": \"BGR\", \"v2x_polyarchy\": 0.572, \"v2x_libdem\": 0.454, \"gdppc_maddison\": 8922.0, \"gdp_growth\": -7.46320765365316, \"gdppc_ppp_wb\": 14954.9612986603, \"terms_of_trade\": null, \"ln_gdppc\": 9.09627541568821}",
+          "output": "27.8",
+          "metadata_row_index": 495,
+          "metadata_iso3": "BGR",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1994, \"gini_disp_se\": 2.74, \"gini_mkt\": 48.8, \"gini_mkt_se\": 2.98, \"iso3\": \"BFA\", \"v2x_polyarchy\": 0.481, \"v2x_libdem\": 0.256, \"gdppc_maddison\": 1189.121337890625, \"gdp_growth\": -1.20776072545993, \"gdppc_ppp_wb\": 1148.60721370395, \"terms_of_trade\": 102.7952975246, \"ln_gdppc\": 7.0809699418545815}",
+          "output": "47.3",
+          "metadata_row_index": 529,
+          "metadata_iso3": "BFA",
+          "metadata_year": 1994
+        },
+        {
+          "input": "{\"year\": 1992, \"gini_disp_se\": 3.12, \"gini_mkt\": 39.8, \"gini_mkt_se\": 3.32, \"iso3\": \"BDI\", \"v2x_polyarchy\": 0.165, \"v2x_libdem\": 0.099, \"gdppc_maddison\": 1128.347412109375, \"gdp_growth\": -1.65473544627476, \"gdppc_ppp_wb\": 1476.99435502804, \"terms_of_trade\": 64.449032402, \"ln_gdppc\": 7.028509374097653}",
+          "output": "38.5",
+          "metadata_row_index": 557,
+          "metadata_iso3": "BDI",
+          "metadata_year": 1992
+        },
+        {
+          "input": "{\"year\": 1997, \"gini_disp_se\": 3.8, \"gini_mkt\": 38.4, \"gini_mkt_se\": 4.19, \"iso3\": \"KHM\", \"v2x_polyarchy\": 0.365, \"v2x_libdem\": 0.137, \"gdppc_maddison\": 1466.36669921875, \"gdp_growth\": -2.91199173422457, \"gdppc_ppp_wb\": 1595.17130656935, \"terms_of_trade\": null, \"ln_gdppc\": 7.290542987060565}",
+          "output": "37.3",
+          "metadata_row_index": 586,
+          "metadata_iso3": "KHM",
+          "metadata_year": 1997
+        },
+        {
+          "input": "{\"year\": 1996, \"gini_disp_se\": 2.84, \"gini_mkt\": 45.8, \"gini_mkt_se\": 3.12, \"iso3\": \"CMR\", \"v2x_polyarchy\": 0.287, \"v2x_libdem\": 0.144, \"gdppc_maddison\": 1710.10595703125, \"gdp_growth\": 1.4475466909911, \"gdppc_ppp_wb\": 3577.59204137871, \"terms_of_trade\": 60.6505407526, \"ln_gdppc\": 7.444310610753237}",
+          "output": "44.1",
+          "metadata_row_index": 602,
+          "metadata_iso3": "CMR",
+          "metadata_year": 1996
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 0.46, \"gini_mkt\": 41.7, \"gini_mkt_se\": 0.59, \"iso3\": \"CAN\", \"v2x_polyarchy\": 0.833, \"v2x_libdem\": 0.754, \"gdppc_maddison\": 30082.0, \"gdp_growth\": -1.29644131211545, \"gdppc_ppp_wb\": 40475.1123914259, \"terms_of_trade\": null, \"ln_gdppc\": 10.31168226521516}",
+          "output": "28.8",
+          "metadata_row_index": 628,
+          "metadata_iso3": "CAN",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1999, \"gini_disp_se\": 2.72, \"gini_mkt\": 52.5, \"gini_mkt_se\": 2.91, \"iso3\": \"CPV\", \"v2x_polyarchy\": 0.778, \"v2x_libdem\": 0.692, \"gdppc_maddison\": 3346.8798828125, \"gdp_growth\": 9.54503889861623, \"gdppc_ppp_wb\": 4006.47964718799, \"terms_of_trade\": 96.8914599697, \"ln_gdppc\": 8.11578381255195}",
+          "output": "50.7",
+          "metadata_row_index": 662,
+          "metadata_iso3": "CPV",
+          "metadata_year": 1999
+        },
+        {
+          "input": "{\"year\": 1992, \"gini_disp_se\": 4.4, \"gini_mkt\": 53.7, \"gini_mkt_se\": 4.63, \"iso3\": \"CAF\", \"v2x_polyarchy\": 0.289, \"v2x_libdem\": 0.152, \"gdppc_maddison\": 965.193359375, \"gdp_growth\": -9.3499022024904, \"gdppc_ppp_wb\": 1294.20254725767, \"terms_of_trade\": 364.6351059364, \"ln_gdppc\": 6.872328453676443}",
+          "output": "52.3",
+          "metadata_row_index": 679,
+          "metadata_iso3": "CAF",
+          "metadata_year": 1992
+        },
+        {
+          "input": "{\"year\": 2003, \"gini_disp_se\": 2.84, \"gini_mkt\": 42.7, \"gini_mkt_se\": 3.18, \"iso3\": \"TCD\", \"v2x_polyarchy\": 0.273, \"v2x_libdem\": 0.095, \"gdppc_maddison\": 925.5126342773438, \"gdp_growth\": 10.2279881032445, \"gdppc_ppp_wb\": 1878.58578619738, \"terms_of_trade\": 83.0668478257, \"ln_gdppc\": 6.830347783219503}",
+          "output": "41.2",
+          "metadata_row_index": 709,
+          "metadata_iso3": "TCD",
+          "metadata_year": 2003
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 0.94, \"gini_mkt\": 55.0, \"gini_mkt_se\": 0.99, \"iso3\": \"CHL\", \"v2x_polyarchy\": 0.721, \"v2x_libdem\": 0.63, \"gdppc_maddison\": 10203.0, \"gdp_growth\": 1.88581611632009, \"gdppc_ppp_wb\": 10952.6557541746, \"terms_of_trade\": 61.2397487586, \"ln_gdppc\": 9.230437073675304}",
+          "output": "50.6",
+          "metadata_row_index": 729,
+          "metadata_iso3": "CHL",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 0.99, \"gini_mkt\": 35.5, \"gini_mkt_se\": 1.42, \"iso3\": \"CHN\", \"v2x_polyarchy\": 0.093, \"v2x_libdem\": 0.065, \"gdppc_maddison\": 2982.0, \"gdp_growth\": 2.42762639469862, \"gdppc_ppp_wb\": 1666.92774090575, \"terms_of_trade\": 108.2696793657, \"ln_gdppc\": 8.000349495324684}",
+          "output": "32.6",
+          "metadata_row_index": 763,
+          "metadata_iso3": "CHN",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 2.19, \"gini_mkt\": 50.9, \"gini_mkt_se\": 2.45, \"iso3\": \"COL\", \"v2x_polyarchy\": 0.473, \"v2x_libdem\": 0.316, \"gdppc_maddison\": 7693.0, \"gdp_growth\": 2.14817587559615, \"gdppc_ppp_wb\": 9998.81069684463, \"terms_of_trade\": 73.463752522, \"ln_gdppc\": 8.948066103458935}",
+          "output": "49.8",
+          "metadata_row_index": 797,
+          "metadata_iso3": "COL",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 2004, \"gini_disp_se\": 3.45, \"gini_mkt\": 51.6, \"gini_mkt_se\": 3.74, \"iso3\": \"COM\", \"v2x_polyarchy\": 0.408, \"v2x_libdem\": 0.215, \"gdppc_maddison\": 1247.27490234375, \"gdp_growth\": 1.16411909687749, \"gdppc_ppp_wb\": 3058.38338421434, \"terms_of_trade\": 44.0942567203, \"ln_gdppc\": 7.128716372341592}",
+          "output": "50.2",
+          "metadata_row_index": 831,
+          "metadata_iso3": "COM",
+          "metadata_year": 2004
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 1.09, \"gini_mkt\": 45.0, \"gini_mkt_se\": 1.51, \"iso3\": \"CRI\", \"v2x_polyarchy\": 0.891, \"v2x_libdem\": 0.838, \"gdppc_maddison\": 7567.0, \"gdp_growth\": 0.969665370569189, \"gdppc_ppp_wb\": 10953.4262046389, \"terms_of_trade\": 79.4387116533, \"ln_gdppc\": 8.931551966694522}",
+          "output": "41.1",
+          "metadata_row_index": 851,
+          "metadata_iso3": "CRI",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1991, \"gini_disp_se\": 2.4, \"gini_mkt\": 42.5, \"gini_mkt_se\": 3.65, \"iso3\": \"HRV\", \"v2x_polyarchy\": 0.242, \"v2x_libdem\": 0.16, \"gdppc_maddison\": 10296.1904296875, \"gdp_growth\": -19.6019000057714, \"gdppc_ppp_wb\": 18812.9437548056, \"terms_of_trade\": null, \"ln_gdppc\": 9.239529244606818}",
+          "output": "28.0",
+          "metadata_row_index": 885,
+          "metadata_iso3": "HRV",
+          "metadata_year": 1991
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 2.44, \"gini_mkt\": 45.4, \"gini_mkt_se\": 4.45, \"iso3\": \"CYP\", \"v2x_polyarchy\": 0.752, \"v2x_libdem\": 0.608, \"gdppc_maddison\": 15560.0, \"gdp_growth\": 5.13997001219491, \"gdppc_ppp_wb\": 27666.650390625, \"terms_of_trade\": null, \"ln_gdppc\": 9.652458797732383}",
+          "output": "30.0",
+          "metadata_row_index": 918,
+          "metadata_iso3": "CYP",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1991, \"gini_disp_se\": 0.93, \"gini_mkt\": 38.3, \"gini_mkt_se\": 1.14, \"iso3\": \"CZE\", \"v2x_polyarchy\": 0.883, \"v2x_libdem\": 0.796, \"gdppc_maddison\": 12724.541015625, \"gdp_growth\": -11.4025060254434, \"gdppc_ppp_wb\": 24734.7702062546, \"terms_of_trade\": null, \"ln_gdppc\": 9.451287771269186}",
+          "output": "22.3",
+          "metadata_row_index": 952,
+          "metadata_iso3": "CZE",
+          "metadata_year": 1991
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 0.73, \"gini_mkt\": 42.2, \"gini_mkt_se\": 1.08, \"iso3\": \"DNK\", \"v2x_polyarchy\": 0.908, \"v2x_libdem\": 0.88, \"gdppc_maddison\": 29412.0, \"gdp_growth\": 1.49524829012768, \"gdppc_ppp_wb\": 46200.4747957389, \"terms_of_trade\": null, \"ln_gdppc\": 10.289158033316113}",
+          "output": "22.6",
+          "metadata_row_index": 985,
+          "metadata_iso3": "DNK",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 2.31, \"gini_mkt\": 48.5, \"gini_mkt_se\": 2.91, \"iso3\": \"DOM\", \"v2x_polyarchy\": 0.46, \"v2x_libdem\": 0.216, \"gdppc_maddison\": 3939.0, \"gdp_growth\": -7.42253842418627, \"gdppc_ppp_wb\": 7327.72670133751, \"terms_of_trade\": 90.0951611737, \"ln_gdppc\": 8.278682162970906}",
+          "output": "46.2",
+          "metadata_row_index": 1019,
+          "metadata_iso3": "DOM",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1994, \"gini_disp_se\": 2.6, \"gini_mkt\": 49.7, \"gini_mkt_se\": 3.49, \"iso3\": \"ECU\", \"v2x_polyarchy\": 0.697, \"v2x_libdem\": 0.45, \"gdppc_maddison\": 6940.09033203125, \"gdp_growth\": 2.26037167910633, \"gdppc_ppp_wb\": 9494.17506194696, \"terms_of_trade\": 77.6282229172, \"ln_gdppc\": 8.845070069558972}",
+          "output": "50.6",
+          "metadata_row_index": 1053,
+          "metadata_iso3": "ECU",
+          "metadata_year": 1994
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 2.09, \"gini_mkt\": 34.8, \"gini_mkt_se\": 2.45, \"iso3\": \"EGY\", \"v2x_polyarchy\": 0.223, \"v2x_libdem\": 0.161, \"gdppc_maddison\": 4022.0, \"gdp_growth\": 2.61630325467065, \"gdppc_ppp_wb\": 8006.62143741369, \"terms_of_trade\": 76.1140716276, \"ln_gdppc\": 8.299534570332597}",
+          "output": "32.4",
+          "metadata_row_index": 1083,
+          "metadata_iso3": "EGY",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 2.61, \"gini_mkt\": 45.8, \"gini_mkt_se\": 3.5, \"iso3\": \"SLV\", \"v2x_polyarchy\": 0.212, \"v2x_libdem\": 0.085, \"gdppc_maddison\": 3378.0, \"gdp_growth\": 2.87694943624557, \"gdppc_ppp_wb\": 5976.01762522026, \"terms_of_trade\": 89.0329188237, \"ln_gdppc\": 8.125039097367745}",
+          "output": "47.4",
+          "metadata_row_index": 1117,
+          "metadata_iso3": "SLV",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 2006, \"gini_disp_se\": 4.81, \"gini_mkt\": 46.7, \"gini_mkt_se\": 5.18, \"iso3\": \"GNQ\", \"v2x_polyarchy\": 0.182, \"v2x_libdem\": 0.054, \"gdppc_maddison\": 36615.70703125, \"gdp_growth\": 3.03105558195507, \"gdppc_ppp_wb\": 32251.7680082519, \"terms_of_trade\": 159.4, \"ln_gdppc\": 10.508232581188567}",
+          "output": "45.5",
+          "metadata_row_index": 1151,
+          "metadata_iso3": "GNQ",
+          "metadata_year": 2006
+        },
+        {
+          "input": "{\"year\": 1991, \"gini_disp_se\": 1.6, \"gini_mkt\": 44.6, \"gini_mkt_se\": 2.17, \"iso3\": \"EST\", \"v2x_polyarchy\": 0.608, \"v2x_libdem\": 0.52, \"gdppc_maddison\": 15350.634765625, \"gdp_growth\": -7.53669445893802, \"gdppc_ppp_wb\": 17718.9543942711, \"terms_of_trade\": null, \"ln_gdppc\": 9.638912104969785}",
+          "output": "28.9",
+          "metadata_row_index": 1168,
+          "metadata_iso3": "EST",
+          "metadata_year": 1991
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 3.9, \"gini_mkt\": 50.6, \"gini_mkt_se\": 3.49, \"iso3\": \"SWZ\", \"v2x_polyarchy\": 0.124, \"v2x_libdem\": 0.104, \"gdppc_maddison\": 3881.0, \"gdp_growth\": 16.2146112334514, \"gdppc_ppp_wb\": 5447.73900233346, \"terms_of_trade\": 89.9495643168, \"ln_gdppc\": 8.263848131368906}",
+          "output": "53.8",
+          "metadata_row_index": 1201,
+          "metadata_iso3": "SWZ",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1995, \"gini_disp_se\": 2.29, \"gini_mkt\": 36.2, \"gini_mkt_se\": 2.54, \"iso3\": \"ETH\", \"v2x_polyarchy\": 0.223, \"v2x_libdem\": 0.097, \"gdppc_maddison\": 744.1417846679688, \"gdp_growth\": 2.57532696159824, \"gdppc_ppp_wb\": 760.264345021167, \"terms_of_trade\": 107.6516614913, \"ln_gdppc\": 6.612231587467066}",
+          "output": "34.9",
+          "metadata_row_index": 1228,
+          "metadata_iso3": "ETH",
+          "metadata_year": 1995
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 3.14, \"gini_mkt\": 42.8, \"gini_mkt_se\": 3.27, \"iso3\": \"FJI\", \"v2x_polyarchy\": 0.223, \"v2x_libdem\": 0.147, \"gdppc_maddison\": null, \"gdp_growth\": 4.84299288693262, \"gdppc_ppp_wb\": 7820.71719014994, \"terms_of_trade\": null, \"ln_gdppc\": 8.96453154162943}",
+          "output": "42.1",
+          "metadata_row_index": 1255,
+          "metadata_iso3": "FJI",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 0.56, \"gini_mkt\": 40.2, \"gini_mkt_se\": 0.85, \"iso3\": \"FIN\", \"v2x_polyarchy\": 0.859, \"v2x_libdem\": 0.819, \"gdppc_maddison\": 26884.0, \"gdp_growth\": 0.246189467799468, \"gdppc_ppp_wb\": 38807.1185244347, \"terms_of_trade\": null, \"ln_gdppc\": 10.199286593089857}",
+          "output": "21.0",
+          "metadata_row_index": 1285,
+          "metadata_iso3": "FIN",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 0.54, \"gini_mkt\": 46.9, \"gini_mkt_se\": 0.8, \"iso3\": \"FRA\", \"v2x_polyarchy\": 0.875, \"v2x_libdem\": 0.802, \"gdppc_maddison\": 28129.0, \"gdp_growth\": 2.268451182731, \"gdppc_ppp_wb\": 38655.8856842914, \"terms_of_trade\": null, \"ln_gdppc\": 10.244556351616321}",
+          "output": "29.1",
+          "metadata_row_index": 1319,
+          "metadata_iso3": "FRA",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1992, \"gini_disp_se\": 3.39, \"gini_mkt\": 47.0, \"gini_mkt_se\": 3.59, \"iso3\": \"GMB\", \"v2x_polyarchy\": 0.466, \"v2x_libdem\": 0.33, \"gdppc_maddison\": 1391.4053955078125, \"gdp_growth\": -0.7383852538714, \"gdppc_ppp_wb\": 2604.26903326754, \"terms_of_trade\": 98.8506081287, \"ln_gdppc\": 7.238069591236667}",
+          "output": "45.7",
+          "metadata_row_index": 1353,
+          "metadata_iso3": "GMB",
+          "metadata_year": 1992
+        },
+        {
+          "input": "{\"year\": 1990, \"gini_disp_se\": 1.74, \"gini_mkt\": 43.8, \"gini_mkt_se\": 2.57, \"iso3\": \"GEO\", \"v2x_polyarchy\": 0.313, \"v2x_libdem\": 0.131, \"gdppc_maddison\": 12140.0, \"gdp_growth\": -14.7657166211898, \"gdppc_ppp_wb\": 12917.0944269361, \"terms_of_trade\": null, \"ln_gdppc\": 9.40426106461349}",
+          "output": "31.2",
+          "metadata_row_index": 1382,
+          "metadata_iso3": "GEO",
+          "metadata_year": 1990
+        },
+        {
+          "input": "{\"year\": 1991, \"gini_disp_se\": 0.68, \"gini_mkt\": 44.1, \"gini_mkt_se\": 0.91, \"iso3\": \"DEU\", \"v2x_polyarchy\": 0.893, \"v2x_libdem\": 0.853, \"gdppc_maddison\": 26769.9609375, \"gdp_growth\": 4.34522003553894, \"gdppc_ppp_wb\": 44125.1442791519, \"terms_of_trade\": null, \"ln_gdppc\": 10.195035677323942}",
+          "output": "26.2",
+          "metadata_row_index": 1416,
+          "metadata_iso3": "DEU",
+          "metadata_year": 1991
+        }
+      ]
+    }
+  ]
+}

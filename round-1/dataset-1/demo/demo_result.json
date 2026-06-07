@@ -1,0 +1,15 @@
+{
+  "kind": "code_demo",
+  "id": "gen_art_dataset_1",
+  "type": "code",
+  "iteration": 1,
+  "title": "Democratic Resilience Panel: SWIID + V-Dem + Maddison + ToT Shocks",
+  "summary": "Five datasets assembled and merged into a Democratic Resilience Panel for the experiment. (1) SWIID summary: 5,138 post-1990 country-year rows from SWIID v9.92 providing gini_disp, gini_mkt, abs_red, rel_red with standard errors. (2) V-Dem via OWID grapher: 6,253 post-1990 rows with v2x_polyarchy and v2x_libdem proxies. (3) Maddison Project Database 2023 via OWID catalog: 5,674 post-1990 rows with gdp_per_capita in 2011 PPP USD for 178 countries. (4) World Bank WDI via API: gdp_growth, gdppc_ppp, terms_of_trade. Panel merged on (iso3, year) with SWIID as backbone; T>=15 consecutive post-1990 filter applied on core variables. Panel full: 4,555 rows, 152 countries, 1990-2025. Panel primary (all core vars non-missing): 4,441 rows, 150 countries, 1990-2023. Variable coverage: gini_disp 100%, v2x_polyarchy 100%, gdppc_maddison 94.6%, gdp_growth 98.4%, terms_of_trade 83.4%. Full data output: 27,192 examples across 5 datasets (panel_primary, swiid_summary, vdem_polyarchy, maddison_gdppc, wb_tot), 8.1MB.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/3_invention_loop/iter_1/gen_art/gen_art_dataset_1",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/4_gen_paper_repo/_3_gen_art_demo/iter_1/gen_art_dataset_1",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_grGHUV38PXXK/4_gen_paper_repo/_3_gen_art_demo/iter_1/gen_art_dataset_1/data_code_demo.ipynb"
+}
